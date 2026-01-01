@@ -1,0 +1,355 @@
+.menu {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    background: rgb(238, 245, 235);
+    padding: 10px 20px;
+    border-radius: 10px;
+}
+
+nav a {
+    margin-left: 15px;
+    color: black;
+}
+
+/* accueil */
+.accueil {
+    display: flex;
+    height: 100vh;
+}
+
+.bloc-gauche {
+    width: 50%;
+}
+
+.bloc-gauche img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.bloc-droit {
+    width: 50%;
+    background: rgb(108, 138, 110);
+    color: rgb(245, 247, 242);
+    padding: 60px;
+}
+
+.bloc-droit h1 {
+    font-size: 60px;
+    font-style: italic;
+    margin-bottom: 20px;
+}
+
+.bloc-droit p {
+    font-size: 18px;
+    line-height: 1.5;
+}
+
+.signature{
+    position: absolute;
+    bottom: 30px;
+    right: 20px
+}
+
+
+/* competence */
+.competences-page {
+    background-image: url("https://static.vecteezy.com/ti/photos-gratuite/p1/2440518-feuilles-d-eucalyptus-tige-a-plat-decentre-composition-sur-doux-neutre-pastel-vert-fond-photo.jpg");
+    background-size: cover;
+    background-position: center;
+    min-height: 100vh;
+    padding: 100px 40px;
+    color: white;
+}
+
+.competences-bloc {
+    max-width: 900px;
+    margin: auto;
+    background: rgba(108, 138, 110, 0.92);
+    padding: 50px;
+    border-radius: 14px;
+    animation: fadeUp 0.8s ease forwards;
+}
+
+
+@keyframes fadeUp {
+    from {
+        opacity: 0;
+        transform: translateY(25px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.competences-bloc h1 {
+    font-size: 48px;
+    margin-bottom: 25px;
+}
+
+.intro-competences {
+    font-size: 18px;
+    line-height: 1.6;
+    margin-bottom: 40px;
+}
+
+.carte {
+    background: rgba(255, 255, 255, 0.14);
+    padding: 25px;
+    border-radius: 12px;
+    margin-bottom: 25px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.carte:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.25);
+}
+
+
+.niveau {
+    margin-top: 15px;
+}
+
+.barre {
+    background: rgba(255, 255, 255, 0.3);
+    height: 8px;
+    border-radius: 6px;
+    overflow: hidden;
+    margin-top: 6px;
+}
+
+.progress {
+    height: 100%;
+    background: #f5f7f2;
+    width: 0;
+    animation: charge 1.2s ease forwards;
+}
+
+.progress.html {
+    animation-delay: 0.3s;
+    width: 80%;
+}
+
+.progress.css {
+    animation-delay: 0.6s;
+    width: 70%;
+}
+
+@keyframes charge {
+    from {
+        width: 0;
+    }
+    to {
+        width: inherit;
+    }
+}
+
+.soft-skills {
+    margin-top: 12px;
+    padding-left: 20px;
+}
+
+.soft-skills li {
+    margin-bottom: 6px;
+}
+
+.workflow {
+    margin-top: 15px;
+}
+
+.workflow span {
+    display: inline-block;
+    margin: 6px 8px 0 0;
+    padding: 6px 14px;
+    background: rgba(255, 255, 255, 0.25);
+    border-radius: 20px;
+    font-size: 14px;
+    transition: background 0.2s;
+}
+
+.workflow span:hover {
+    background: rgba(255, 255, 255, 0.4);
+}
+
+/* projet */
+
+.projets-page {
+    background: url("https://static.vecteezy.com/ti/photos-gratuite/t1/49686494-vert-feuilles-creation-une-naturel-cadre-sur-une-vert-arriere-plan-parfait-pour-durable-ou-respectueux-de-la-nature-a-theme-dessins-gratuit-photo.jpeg");
+    background-size: cover;
+    background-position: center;
+    min-height: 100vh;
+    padding: 120px 40px;
+    color: white;
+}
+
+.projets-intro {
+    max-width: 900px;
+    margin: 0 auto 60px;
+    text-align: center;
+    animation: fadeIntro 0.8s ease-out;
+}
+
+@keyframes fadeIntro {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.projets-intro h1 {
+    font-size: 50px;
+    margin-bottom: 20px;
+}
+
+.projets-intro p {
+    font-size: 18px;
+    line-height: 1.6;
+}
+
+.projet-card {
+    max-width: 900px;
+    margin: 0 auto 50px;
+    background: rgba(108, 138, 110, 0.92);
+    padding: 40px;
+    border-radius: 14px;
+    animation: fadeUp 0.8s ease-out;
+}
+
+@keyframes fadeUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.projet-card h2 {
+    margin-bottom: 15px;
+}
+
+.objectif {
+    margin-bottom: 15px;
+}
+
+.infos-projet {
+    display: flex;
+    gap: 30px;
+    margin: 25px 0;
+    flex-wrap: wrap;
+}
+
+.infos-projet div {
+    flex: 1;
+    min-width: 250px;
+}
+
+.infos-projet h3 {
+    margin-bottom: 10px;
+}
+
+.infos-projet ul {
+    padding-left: 20px;
+}
+
+.infos-projet li {
+    margin-bottom: 6px;
+}
+
+.difficultes {
+    margin-top: 20px;
+    font-style: italic;
+    opacity: 0.9;
+}
+
+
+
+/* A propos et contact */
+
+.apropos-contact {
+    background: url("https://img.freepik.com/photos-premium/texture-arriere-plan-faite-feuilles-eucalyptus-vertes-vue-dessus-plat_257163-411.jpg");
+    background-size: cover;
+    background-position: center;
+    min-height: 100vh;
+    padding: 120px 40px;
+    display: flex;
+    gap: 30px;
+    color: white;
+    animation: fadeApropos 0.8s ease-out;
+}
+
+@keyframes fadeApropos {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+
+.about-box,
+.contact-box {
+    background: rgba(108, 138, 110, 0.95);
+    padding: 30px;
+    border-radius: 14px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.about-box {
+    flex: 2;
+}
+
+.contact-box {
+    flex: 1;
+}
+
+.about-box:hover,
+.contact-box:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 25px rgba(0, 0, 0, 0.25);
+}
+
+
+.about-box h1,
+.about-box h2,
+.contact-box h2 {
+    margin-bottom: 15px;
+}
+
+
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    border-radius: 6px;
+    border: none;
+}
+
+.contact-form button {
+    margin-top: 10px;
+    padding: 10px;
+    background: rgb(245, 247, 242);
+    color: rgb(108, 138, 110);
+    border: none;
+    border-radius: 20px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: transform 0.2s ease;
+}
+
+.contact-form button:hover {
+    transform: translateY(-3px);
+}
